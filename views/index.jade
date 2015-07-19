@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  #board
+  #content
+    ul#messages
+    form#messageForm
+      input#m.form-control(autocomplete="off")
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+  script(src="https://cdn.socket.io/socket.io-1.3.5.js")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+  script(src='/javascripts/main.js')

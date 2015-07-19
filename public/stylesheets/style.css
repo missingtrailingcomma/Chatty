@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#frontForm {
+  text-align: center;
+  height: 100vh;
+  padding-top: 40vh;
+  background-image: -webkit-linear-gradient(right bottom, rgba(200, 156, 208, 0) 0%, rgb(200, 156, 208) 100%), -webkit-linear-gradient(right top, rgba(232, 201, 234, 0) 0%, rgb(232, 201, 234) 100%), -webkit-linear-gradient(left top, rgba(75, 49, 67, 0) 0%, rgb(75, 49, 67) 100%), -webkit-linear-gradient(left bottom, rgba(104, 60, 149, 0) 0%, rgb(104, 60, 149) 100%);
+}
+
+#frontForm > * {
+  margin: auto 5px;
+  color: #333;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#frontForm > button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#frontForm > button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#frontForm > input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.3s;
+}
+
+#frontForm > input:hover {
+  border-bottom: 1px solid #333;
+}
+
+#frontForm > input:focus {
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#board {
+  text-align: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgba(51, 51, 51, 0.3);
+  transition: color 0.3s;
+  margin: 10px;
+}
+
+#board:hover {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+#content {
+  margin-bottom: 60px;
+  overflow: auto;
+  max-width: 90%;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#messageForm {
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  max-width: 90%;
+  width: 960px;
+  margin: 10px auto;
+}
+
+#m {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding: 3px;
+  margin: 0;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#m:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#messages {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  clear: both;
+  overflow:hidden;
+  overflow-y:scroll;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+#messages li {
+  max-width: 70%;
+  padding: 2px;
+  margin: 1px;
+  clear: both;
+  border-radius: 2px;
+}
+
+#messages li.leftt {
+  float: left;
+  border: 1px solid #FF5E3A;
+}
+
+#messages li.rightt {
+  float: right;
+  border: 1px solid #5BCAFF;
+  text-align: right;
+}

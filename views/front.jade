@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form#frontForm(method="post")
+    input(type="text" name="username" placeholder="Username")
+    input(type="password" name="password" placeholder="Password")
+    button(id="loginButton") Login
+    button(id="signUpButton") Sign Up
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+  script(src='/javascripts/front.js')
