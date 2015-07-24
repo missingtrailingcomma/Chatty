@@ -10,8 +10,8 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
 var socketio = require('socket.io');
 var passportLocalMongoose = require('passport-local-mongoose');
-
-mongoose.connect('mongodb://localhost/MyDatabase');
+var URI = process.env.MONGOLAB_URI || 'mongodb://localhost/MyDatabase';
+mongoose.connect('mongodb://heroku_lm8gfk6w:80jmu2o7njrq4931qftm6ve2cd@ds031477.mongolab.com:31477/heroku_lm8gfk6w');
 
 var app = express();
 var io = socketio();
